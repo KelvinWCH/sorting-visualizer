@@ -1,7 +1,7 @@
 .bar{
     background-color: green;
     color: white;
-    font-size: (100vh) / 100;
-    width: max-content;
+    
+    width: 50b;
     align-items: center;
 }

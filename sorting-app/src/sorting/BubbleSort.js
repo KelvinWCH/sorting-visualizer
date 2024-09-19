@@ -1,6 +1,6 @@
 const delay = async (ms) => {
     return new Promise((resolve) => 
-        setTimeout(resolve, ms));
+        setTimeout(resolve, ms / 1000));
 };
 
 const BubbleSort = async (arr, updateArray) => {
@@ -13,23 +13,16 @@ const BubbleSort = async (arr, updateArray) => {
             if (array[j] > array[j + 1]) {
                 // Swap the elements
                 [array[j], array[j + 1]] = [array[j + 1], array[j]];
-
-       
-                console.log(array);
-
-               
+                await delay(0);
                 updateArray([...array]);
                 swapped = true;
             }
-            await delay(0);
-            
- 
+
         }
-       
+  
         if (!swapped) break; // If no elements were swapped, array is sorted
     }
     
-    updateArray(array);
 }
 
 export default BubbleSort;

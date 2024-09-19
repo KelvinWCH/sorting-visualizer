@@ -38,15 +38,3 @@
 }
 
 
-.container{
-  display: flex;
-  flex-direction: row;
-  height: 50vh;
-  width: 50wh;
-
-  margin-top: 100px;
-
-  column-gap: 1px;
-  justify-content: center;
-  align-items: end;
-}
